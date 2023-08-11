@@ -417,6 +417,14 @@ const animals = [
    document.getElementById("startagain2").addEventListener("click", function startagain2(){
    window.location.reload();
    });
+
+
+
+document.getElementById("english").addEventListener("click", function english(){
+window.location.replace("https://timundnoam.github.io/hangman-de");
+
+
+})
    
    
    
