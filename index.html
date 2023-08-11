@@ -1,0 +1,196 @@
+<head>
+    <html lang="en">
+<title>Hangman</title>
+
+<meta charset="UFT-8">
+
+<meta name="author" content="Noam & Tim">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+ 
+
+ 
+
+<body>
+
+<h1>Hangman</h1>
+
+<h3>Tim & Noam</h3>
+
+ 
+
+ 
+
+<div class="hangman">
+
+    <canvas class="changman" id="cstickman"></canvas>
+
+</div>
+
+ 
+
+ 
+
+<div class="score">
+
+    <h2 id="lives"><b style="font-weight: bolder;">7</b> lives left</h2>
+
+    <h3 class="h32">Guess the animal!</h3>
+
+</div>
+
+    <container class="container">
+
+<div id="chars">
+
+</div>
+
+    </container>
+
+
+
+
+<div id="myModal" class="modal">
+
+<div class="modal-content">
+
+<p id="word"></p>
+
+<p>You lost!</p>
+
+<i class="em em-cry" aria-role="presentation" aria-label="CRYING FACE" id="emoji2"></i>
+
+<button class="btn2" id="startagain2">Try Again</button>
+
+</div>
+
+</div>
+
+<div id="myModal2" class="modal2">
+
+<div class="modal-content2">
+
+<p>Congrats, you won!</p>
+
+<i class="em em-grin" aria-role="presentation" aria-label="GRINNING FACE WITH SMILING EYES" id="emoji"></i>
+
+<button class="btn3" id="startagain3">Try Again</button>
+
+</div>
+
+</div>
+
+ 
+
+ 
+
+<div id="keyboard">
+
+    <div class="keyboard-row">
+
+        <button class="key" onclick="appendLetter('q')" id="q">Q</button>
+
+        <button class="key" onclick="appendLetter('w')" id="w">W</button>
+
+        <button class="key" onclick="appendLetter('e')" id="e">E</button>
+
+        <button class="key" onclick="appendLetter('r')" id="r">R</button>
+
+        <button class="key" onclick="appendLetter('t')" id="t">T</button>
+
+        <button class="key" onclick="appendLetter('z')" id="z">Z</button>
+
+        <button class="key" onclick="appendLetter('u')" id="u">U</button>
+
+        <button class="key" onclick="appendLetter('i')" id="i">I</button>
+
+        <button class="key" onclick="appendLetter('o')" id="o">O</button>
+
+        <button class="key" onclick="appendLetter('p')" id="p">P</button>
+
+</div>
+
+    <div class="keyboard-row">
+
+        <button class="key" onclick="appendLetter('a')" id="a">A</button>
+
+        <button class="key" onclick="appendLetter('s')" id="s">S</button>
+
+        <button class="key" onclick="appendLetter('d')" id="d">D</button>
+
+        <button class="key" onclick="appendLetter('f')" id="f">F</button>
+
+        <button class="key" onclick="appendLetter('g')" id="g">G</button>
+
+        <button class="key" onclick="appendLetter('h')" id="h">H</button>
+
+        <button class="key" onclick="appendLetter('j')" id="j">J</button>
+
+        <button class="key" onclick="appendLetter('k')" id="k">K</button>
+
+        <button class="key" onclick="appendLetter('l')" id="l">L</button>
+
+</div>
+
+    <div class="keyboard-row">
+
+        <button class="key" onclick="appendLetter('y')" id="y">Y</button>
+
+        <button class="key" onclick="appendLetter('x')" id="x">X</button>
+
+        <button class="key" onclick="appendLetter('c')" id="c">C</button>
+
+        <button class="key" onclick="appendLetter('v')" id="v">V</button>
+
+        <button class="key" onclick="appendLetter('b')" id="b">B</button>
+
+        <button class="key" onclick="appendLetter('n')" id="n">N</button>
+
+        <button class="key" onclick="appendLetter('m')" id="m">M</button>
+
+</div>
+
+    </div>
+
+ 
+
+ 
+
+<br/>
+
+    <div>
+
+        <button id="startagain" class="btn">
+
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+
+        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+
+        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+
+        </svg>
+
+        <span>Try Again</span>
+
+        </button>
+
+    </div>
+
+</body>
+
+</head>
+
+</html>
+
+ 
+
+ 
+
+<script src="index2.js"></script>
